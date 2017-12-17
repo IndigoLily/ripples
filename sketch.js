@@ -23,7 +23,7 @@ const ripples = [];
 
   for (let i = ripples.length - 1; i >= 0; i--) {
     let r = ripples[i];
-    if (r.size > 1 || r.fade <= 0) {
+    if (r.fade <= 0 || r.size > 1) {
       ripples.splice(i,1);
       continue;
     }
